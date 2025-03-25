@@ -21,6 +21,7 @@ namespace IdentityServer
 				new ApiResource("ResourceReview"){Scopes={"ReviewFullPermission"}},
 				new ApiResource("ResourcePayment"){Scopes={"PaymentFullPermission"}},
 				new ApiResource("ResourceMessage"){Scopes={"MessageFullPermission"}},
+				new ApiResource("ResourceOcelot"){Scopes={"OcelotFullPermission"}},
 				new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
 				
 		};
@@ -45,6 +46,7 @@ namespace IdentityServer
 			new ApiScope("ReviewFullPermission","Full Authority For Review Operations"),
 			new ApiScope("PaymentFullPermission","Full Authority For Payment Operations"),
 			new ApiScope("MessageFullPermission","Full Authority For Message Operations"),
+			new ApiScope("OcelotFullPermission","Full Authority For Ocelot Operations"),
 			new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
 		};
 
@@ -57,7 +59,7 @@ namespace IdentityServer
 				ClientName="Hospital Patient User",
 				AllowedGrantTypes=GrantTypes.ClientCredentials,
 				ClientSecrets={new Secret ("hospitalsecret".Sha256()) },
-				AllowedScopes={ "EmployeeReadPermission", "ReviewFullPermission", "EmployeeFullPermission", "AppointmentFullPermission",IdentityServerConstants.LocalApi.ScopeName },
+				AllowedScopes={ "EmployeeReadPermission", "ReviewFullPermission", "EmployeeFullPermission", "AppointmentFullPermission", "OcelotFullPermission", IdentityServerConstants.LocalApi.ScopeName },
 				AllowAccessTokensViaBrowser=true,
 			},
 
@@ -70,7 +72,7 @@ namespace IdentityServer
 				AllowedScopes=
 				{ "EmployeeReadPermission", "EmployeeCreatePermission", "PatientFullPermission" ,
 					"PrescriptionFullPermission", "AppointmentFullPermission", "ReviewFullPermission",
-					"PaymentFullPermission", "MessageFullPermission",
+					"PaymentFullPermission", "MessageFullPermission","OcelotFullPermission",
 
 					IdentityServerConstants.LocalApi.ScopeName,
 					IdentityServerConstants.StandardScopes.Email,

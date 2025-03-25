@@ -25,6 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Review", "Review", "{85BC4F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.Review", "Services\Review\Hospital.Review\Hospital.Review.csproj", "{6FA9702A-905D-4CFE-8AC9-730EB31683E7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{CA150767-A436-40BC-BB0C-5DB025AF1D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospital.OcelotGateway", "APIGateway\Hospital.OcelotGateway\Hospital.OcelotGateway.csproj", "{D6C29DDE-CB01-4613-9F4F-D243B26A5689}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{6FA9702A-905D-4CFE-8AC9-730EB31683E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA9702A-905D-4CFE-8AC9-730EB31683E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA9702A-905D-4CFE-8AC9-730EB31683E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C29DDE-CB01-4613-9F4F-D243B26A5689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C29DDE-CB01-4613-9F4F-D243B26A5689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C29DDE-CB01-4613-9F4F-D243B26A5689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C29DDE-CB01-4613-9F4F-D243B26A5689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +73,6 @@ Global
 		{7285863A-998C-4CA6-99AD-E1CB41D4E980} = {1B2DFA18-B8EC-4D83-82DF-48748FBE2CC0}
 		{85BC4F73-F3E4-4F42-BBE2-4B5F17FA96D4} = {29F79B74-5F34-4731-BFF9-7C45858B44B9}
 		{6FA9702A-905D-4CFE-8AC9-730EB31683E7} = {85BC4F73-F3E4-4F42-BBE2-4B5F17FA96D4}
+		{D6C29DDE-CB01-4613-9F4F-D243B26A5689} = {CA150767-A436-40BC-BB0C-5DB025AF1D51}
 	EndGlobalSection
 EndGlobal
